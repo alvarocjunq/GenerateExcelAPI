@@ -1,4 +1,4 @@
-package br.com.gexapi;
+package br.com.gexapi.main;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -38,7 +38,7 @@ public class GenerateExcel {
 	 * @param lista Lista de registros a ser colocada na sheet (Objetos mapeados com a @PositionExcel 
 	 * @param titles Titulos que vão aparecer no Header
 	 * 
-	 * @see {@link br.com.gexapi.PositionExcel}
+	 * @see {@link br.com.gexapi.main.PositionExcel}
 	 */
 	public static void addSheet(Workbook workbook, String name, List<?> lista, String...titles){
 		Sheet sheet = workbook.createSheet(name);
