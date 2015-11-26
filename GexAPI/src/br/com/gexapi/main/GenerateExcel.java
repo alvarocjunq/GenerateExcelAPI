@@ -25,7 +25,7 @@ public class GenerateExcel {
 			workbook.write(out);
 			out.flush();
 			out.close();
-			workbook.close();
+//			workbook.close(); TODO: Avaliar a necessidade do fechamento
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
